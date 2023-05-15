@@ -1,0 +1,79 @@
+* {                                
+    box-sizing: border-box;         /*CSS for responsive website*/
+  }
+  
+  header{
+    text-align:center;
+    color: black;
+    background-image:linear-gradient(120deg,orange,white,green);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif; 
+    padding: 14px; 
+}
+
+footer{
+    position: fixed;
+    bottom:0;
+    text-align:right;
+    color:white ;
+    background-image:linear-gradient(120deg,orange,white,green);
+    font-size:20px;   
+    font-style: italic;
+}
+
+body{
+    background-image:url("https://static.vecteezy.com/system/resources/previews/005/230/055/original/tricolor-indian-flag-theme-republic-day-watercolor-texture-background-free-vector.jpg");
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+img{
+    height: 233px;
+    width:250px;
+    float: left;
+    padding: 10px;
+} 
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 30px;
+  }
+  
+  .flex-item {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-color: black;
+    border-radius: 10px;
+    border-style:double ;  
+  }
+  
+  @media screen and (min-width: 360px) {
+    .flex-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    img{
+        border-radius: 14px;
+        float:left;
+        padding: 5px;
+    }
+    
+    .flex-item {
+      width: 100%;
+      margin-right: 10px;
+    }
+
+    header,footer{
+        width: 100%;
+    }
+    
+    .flex-item:last-child {
+      margin-right: 0;
+    }
+  }
